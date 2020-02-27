@@ -29,6 +29,7 @@ function viewCart() {
       text = text + `${cart[i]} at '$'${cart[i].itemPrice}, `
     }
   }
+  return text
 }
 
 function total() {
