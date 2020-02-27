@@ -50,7 +50,7 @@ function removeFromCart(item) {
       itemInCartIndex = i;
     }
   }
-  if (!itemInCart) {
+  if (itemInCartIndex<0) {
     return ("That item is not in your cart.")
   }
   cart.splice(itemInCartIndex,1)
